@@ -33,7 +33,7 @@ jobs:
           buildozer-global-
 
     - name: Build with Buildozer
-      uses: ArtemSerebrenninkov/buildozer-action@v1
+      uses: ArtyomSerebrenninkov/buildozer-action-v1@master
       with:
         buildozer_version: master
         python_version: 3.10
@@ -41,7 +41,7 @@ jobs:
         repository_root: .
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Project-Soldier-APK-${{ steps.get-date.outputs.date }}
         path: bin/*.apk
