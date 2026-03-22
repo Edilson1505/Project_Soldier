@@ -1,0 +1,35 @@
+﻿=== Soldier_1 ===
+  Attack.png: 384x128  frames=3
+  Dead.png: 512x128  frames=4
+  Explosion.png: 1152x128  frames=9
+  Grenade.png: 1152x128  frames=9
+  Hurt.png: 384x128  frames=3
+  Idle.png: 896x128  frames=7
+  Recharge.png: 1664x128  frames=13
+  Run.png: 1024x128  frames=8
+  Shot_1.png: 512x128  frames=4
+  Shot_2.png: 512x128  frames=4
+  Walk.png: 896x128  frames=7
+=== Soldier_2 ===
+  Attack.png: 512x128  frames=4
+  Dead.png: 512x128  frames=4
+  Grenade.png: 2048x128  frames=16
+  Hurt.png: 384x128  frames=3
+  Idle.png: 1152x128  frames=9
+  Recharge.png: 896x128  frames=7
+  Run.png: 1024x128  frames=8
+  Shot_1.png: 512x128  frames=4
+  Shot_2.png: 512x128  frames=4
+  Walk.png: 1024x128  frames=8
+=== Soldier_3 ===
+  Attacck.png: 640x128  frames=5
+  Dead.png: 640x128  frames=5
+  Grenade.png: 1024x128  frames=8
+  Hurt.png: 512x128  frames=4
+  Idle.png: 896x128  frames=7
+  Recharge.png: 1024x128  frames=8
+  Run.png: 768x128  frames=6
+  Shot_1.png: 512x128  frames=4
+  Shot_2.png: 512x128  frames=4
+  Smoke.png: 2816x128  frames=22
+  Walk.png: 1024x128  frames=8

@@ -1,0 +1,47 @@
+name: Build Project Soldier Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Get Date
+      id: get-date
+      run: |
+        echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Cache Buildozer global directory
+      uses: actions/cache@v3
+      with:
+        path: .buildozer
+        key: buildozer-global-${{ hashFiles('buildozer.spec') }}
+        restore-keys: |
+          buildozer-global-
+
+    - name: Build with Buildozer
+      uses: ArtemSerebrenninkov/buildozer-action@v1
+      with:
+        buildozer_version: master
+        python_version: 3.10
+        command: android debug
+        repository_root: .
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: Project-Soldier-APK-${{ steps.get-date.outputs.date }}
+        path: bin/*.apk
