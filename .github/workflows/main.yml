@@ -36,6 +36,7 @@ jobs:
       uses: ArtemSBulgakov/buildozer-action@v1
       env:
         USER: root
+        PIP_BREAK_SYSTEM_PACKAGES: 1
       with:
         buildozer_version: master
         command: android debug
