@@ -12,6 +12,8 @@ class TacticalDummy:
         self.hit_w, self.hit_h = 50, 100
         # Rectangulo de colisión basado en pies
         self.hitbox = pygame.Rect(self.x - 25, self.y - 100, 50, 100)
+        # Pre-cache the font for better performance
+        self.font = get_safe_font("Consolas", 14, bold=True)
     
     def take_damage(self, amt):
         self.health -= amt
@@ -40,7 +42,7 @@ class TacticalDummy:
         if not self.is_dead:
             pygame.draw.rect(surface, (40, 0, 0), (sx - 40, sy - 140, 80, 6))
             pygame.draw.rect(surface, (100, 150, 255), (sx - 40, sy - 140, int(80 * (self.health/500)), 6))
-            txt = get_safe_font("Consolas", 14, bold=True).render("DUMMY [TACTICO]", True, (150, 180, 255))
+            txt = self.font.render("DUMMY [TACTICO]", True, (150, 180, 255))
             surface.blit(txt, (sx - txt.get_width()//2, sy - 160))
 
         frame = self.anims[self.current_anim][self.frame_index]
