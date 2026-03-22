@@ -33,7 +33,7 @@ jobs:
           buildozer-global-
 
     - name: Build with Buildozer
-      uses: ArtyomSerebrenninkov/buildozer-action-v1@master
+      uses: ArtemSBulgakov/buildozer-action@v1
       with:
         buildozer_version: master
         python_version: 3.10
