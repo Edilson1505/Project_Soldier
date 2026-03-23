@@ -1,6 +1,6 @@
 import pygame
-from ..elements.base import MenuButton
-from ...core.paths import get_asset_path, get_safe_font
+from src.ui.elements.base import MenuButton
+from src.core.paths import get_asset_path, get_safe_font
 
 class ProfileScreen:
     def __init__(self, username, img_file):

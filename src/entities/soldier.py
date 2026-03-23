@@ -1,8 +1,8 @@
 import pygame
 import random
-from ..core.settings import (DISPLAY_SIZE, SPEED, ANIM_FRAMES, ANIM_SPEED, SCALE, MAX_AMMO, MAX_GRENADES)
-from ..core.utils import load_spritesheet
-from .projectiles import Bullet, GrenadeProjectile, ExplosionEffect
+from src.core.settings import (DISPLAY_SIZE, SPEED, ANIM_FRAMES, ANIM_SPEED, SCALE, MAX_AMMO, MAX_GRENADES)
+from src.core.utils import load_spritesheet
+from src.entities.projectiles import Bullet, GrenadeProjectile, ExplosionEffect
 
 class Soldier:
     def __init__(self, x, y):

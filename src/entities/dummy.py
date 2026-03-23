@@ -1,7 +1,7 @@
 import pygame
-from ..core.settings import DISPLAY_SIZE, SCALE, ANIM_FRAMES, ANIM_SPEED
-from ..core.utils import load_spritesheet
-from ..core.paths import get_safe_font
+from src.core.settings import DISPLAY_SIZE, SCALE, ANIM_FRAMES, ANIM_SPEED
+from src.core.utils import load_spritesheet
+from src.core.paths import get_safe_font
 
 class TacticalDummy:
     def __init__(self, x, y):

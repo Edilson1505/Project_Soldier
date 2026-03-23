@@ -1,12 +1,12 @@
 import pygame
-from .elements.base import UIButton
-from .screens.login import LoginMenu
-from .screens.menu import MainMenu
-from .screens.profile import ProfileScreen
-from .screens.avatar import AvatarSelection
-from .screens.lan import LANMenu
-from .screens.hud import TacticalHUD
-from .screens.pause import PauseMenu
+from src.ui.elements.base import UIButton
+from src.ui.screens.login import LoginMenu
+from src.ui.screens.menu import MainMenu
+from src.ui.screens.profile import ProfileScreen
+from src.ui.screens.avatar import AvatarSelection
+from src.ui.screens.lan import LANMenu
+from src.ui.screens.hud import TacticalHUD
+from src.ui.screens.pause import PauseMenu
 
 class GameUI:
     def __init__(self, soldier):

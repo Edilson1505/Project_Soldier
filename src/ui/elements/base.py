@@ -1,7 +1,7 @@
 import pygame
 import math
 import random
-from ...core.paths import get_safe_font
+from src.core.paths import get_safe_font
 
 class AmbientParticle:
     def __init__(self, sw, sh):

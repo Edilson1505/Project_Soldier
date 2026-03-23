@@ -14,7 +14,7 @@ android.minapi = 21
 android.ndk = 25b
 android.ndk_api = 21
 android.accept_sdk_license = True
-android.archs = arm64-v8a
+android.archs = armeabi-v7a, arm64-v8a
 fullscreen = 1
 log_level = 2
 

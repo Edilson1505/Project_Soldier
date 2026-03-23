@@ -1,7 +1,7 @@
 import pygame
 import math
-from ...core.settings import MAX_AMMO, MAX_GRENADES, ROOM_W, ROOM_H, ROOMS_MAP
-from ...core.paths import get_asset_path, get_safe_font
+from src.core.settings import MAX_AMMO, MAX_GRENADES, ROOM_W, ROOM_H, ROOMS_MAP
+from src.core.paths import get_asset_path, get_safe_font
 
 class TacticalHUD:
     def __init__(self, soldier):

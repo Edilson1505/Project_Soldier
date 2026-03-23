@@ -1,9 +1,9 @@
 import pygame
 import math
 import random
-from ..core.settings import SPEED, ANIM_SPEED, SCALE, WALL_T, ROOM_W, ROOM_H, PADDING
-from ..core.paths import get_safe_font
-from .projectiles import Bullet
+from src.core.settings import SPEED, ANIM_SPEED, SCALE, WALL_T, ROOM_W, ROOM_H, PADDING
+from src.core.paths import get_safe_font
+from src.entities.projectiles import Bullet
 
 NAMES = ["SGT. RED", "CPL. PHOENIX", "SHADOW", "STALKER", "ELITE BRAVO", "GHOST-7", "DELTA-9"]
 

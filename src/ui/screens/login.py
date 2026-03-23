@@ -1,8 +1,8 @@
 import pygame
 import math
-from ..elements.base import TextInput, MenuButton, AmbientParticle
-from ...core.settings import SCREEN_W, SCREEN_H
-from ...core.paths import get_asset_path, get_safe_font
+from src.ui.elements.base import TextInput, MenuButton, AmbientParticle
+from src.core.settings import SCREEN_W, SCREEN_H
+from src.core.paths import get_asset_path, get_safe_font
 
 class LoginMenu:
     def __init__(self):

@@ -1,5 +1,5 @@
 import pygame
-from ..elements.base import MenuButton
+from src.ui.elements.base import MenuButton
 
 class PauseMenu:
     def __init__(self):

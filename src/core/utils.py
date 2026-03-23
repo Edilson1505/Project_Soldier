@@ -1,7 +1,7 @@
 import pygame
 import os
-from .settings import SCALE
-from .paths import get_asset_path
+from src.core.settings import SCALE
+from src.core.paths import get_asset_path
 
 
 def load_spritesheet(name: str, count: int) -> list:

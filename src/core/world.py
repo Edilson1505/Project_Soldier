@@ -1,6 +1,6 @@
 import pygame
 import random
-from .settings import (ROOMS_MAP, ROOM_W, ROOM_H, PADDING,
+from src.core.settings import (ROOMS_MAP, ROOM_W, ROOM_H, PADDING,
                         WALL_T, DOOR_W, WALL_COLOR, GROUND_COLOR, WALL_HL)
 
 # Bunker Palette

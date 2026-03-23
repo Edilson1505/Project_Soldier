@@ -1,5 +1,5 @@
 import random
-from .settings import SCREEN_W, SCREEN_H, WORLD_W, WORLD_H
+from src.core.settings import SCREEN_W, SCREEN_H, WORLD_W, WORLD_H
 
 class Camera:
     def __init__(self):

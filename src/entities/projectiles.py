@@ -1,7 +1,7 @@
 import pygame
 import math
 import random
-from ..core.settings import DISPLAY_SIZE, SCALE, ANIM_SPEED
+from src.core.settings import DISPLAY_SIZE, SCALE, ANIM_SPEED
 
 class Bullet:
     def __init__(self, x, y, right=True):
